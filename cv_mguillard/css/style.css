@@ -1,0 +1,668 @@
+/*---------------CSS COMMMUN--------------*/
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.containerNav
+{
+    padding: 0 20px;
+}
+
+.title_gen
+{
+    font-size: 2.5em;
+    color: #2c333e;
+    font-family: "baskervville";
+    text-align: center;
+}
+.p_default
+{
+    font-family: 'Barlow', 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+    color: black;
+    vertical-align: middle;
+}
+/*---------------Séparateur--------------*/
+
+.separete{
+    padding: 10px 0;
+    margin-bottom: 10vh;
+}
+.separete img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*---------------Body--------------*/
+
+
+body{
+    margin: 0;
+    padding-top: 76px;
+    background-image: url(../img/gouv_background1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+/*---------------HEADER--------------*/
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    background-color: #2c333e;
+}
+.containerNav{
+    position: relative;
+}
+.nav{
+    position: absolute;
+    top: -300px;
+    left: 0;
+    right: 0;
+    background: #2c333e;
+    opacity: 0;
+    transition: 2s opacity ease, 2s top ease;
+    text-align: center;
+}
+.nav ul{
+    margin: 0 auto;
+}
+.nav ul li{
+    display: block;
+    padding: 10px 0;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: "baskervville";
+    font-size: 1.8em;
+    transition: 0.5s opacity ease;
+}
+
+.nav ul li .actif{
+    color: Grey;
+    font-size: 2em;
+}
+.nav ul li a:hover{
+    color: grey;
+}
+
+.icon_burger{
+    float: right;
+    margin: 10px 0 0 0;
+    width: 42px;
+    height: 33px;
+    position: relative;
+    z-index: 1000;
+}
+.icon_burger hr{
+    margin: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;right: 0;
+}
+.icon_burger .top
+{
+    transition: 0.2s ease;
+    top: 0;
+}
+.icon_burger .bot
+{
+    transition: 0.2s ease;
+    bottom: 0;
+}
+
+.icon_burger .mid1,
+.icon_burger .mid2
+{
+    transition: 0.3s ease;
+    margin-bottom: 2px;
+    top: 13px;
+}
+
+.icon_burger:hover .top,
+.icon_burger:hover .bot
+{
+    opacity: 0;
+}
+.icon_burger:hover .mid1
+{
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+.icon_burger:hover .mid2
+{
+    transition: 0.5s;
+    transform: rotate(-45deg);
+}
+
+.icon_burger:hover + .nav,
+.nav:hover{
+    right: 0;
+    left: 0;
+    top: 0;
+    padding-top: 70px;
+    opacity: 0.8;
+}
+/*---------------Footer--------------*/
+
+footer
+{
+    background-color: #2c333e;
+    margin: auto;
+}
+.picture_footer
+{
+    padding-top: 50px;
+}
+.picture_footer img
+{
+    display: block;
+    margin: 0 auto;
+}
+.button_foot
+{
+    text-align: center;
+    padding-top: 30px;
+}
+.button_foot a
+{
+    color: #ecedee;
+    text-decoration: none;
+    font-size: 50px;
+    margin-right: 10px;
+}
+.button_foot a i
+{
+    transition: 1s ease;
+}
+
+.button_foot a:hover{
+    color: white;
+    transition: 1s  ease;
+}
+.button_foot a:hover i{
+    transform: scale(1.2);
+
+}
+.copyright
+{
+    text-align: center;
+    padding: 30px 0;
+}
+.copyright p
+{
+    color: #ecedee;
+    font-size: 0.8em;
+    margin: auto 0;
+}
+
+/*---------------HERO--------------*/
+.hero{
+    padding: 200px 0;
+    background-image: url(../img/backgroundHero.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10vh;
+}
+.hero .title_hero{
+    text-align: center;
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    color: #2c333e;
+}
+.hero .title_hero span{
+    margin-right: 0.2em;
+}
+/*--------------------------------------------
+---------------PageIndex------------------
+--------------------------------------------*/
+/*---------------accueil--------------*/
+.margin_home
+{
+    margin-bottom: 5vh;
+}
+
+
+.content_home_service .text_left
+{
+    text-align: left;
+    text-decoration: 1px solid #2c333e;
+}
+.text_modif
+{
+    font-weight: 600;
+    text-decoration: underline;
+}
+/*--------------------------------------------
+---------------PageService------------------
+--------------------------------------------*/
+/*---------------Image--------------*/
+.box_picture_boat .box_picture{
+    position: relative;
+    }
+    
+    .box_picture_boat{
+        
+        padding: 8px;
+    }
+    
+    .box_picture_boat .box_picture p{
+        
+        background-color: rgba(40,51, 60, 0);
+        padding: auto 0;
+        position: absolute; bottom: 0; left: 0; right: 0;
+        color: rgba(76, 187, 113, 0);
+        font-size: 1.5em;
+        margin-bottom: 0;
+        text-align: left;
+        padding-left: 5px;
+        transition: 1s ease;
+    }
+    
+    .box_picture_boat .box_picture p span{
+        float: right;
+        padding-right: 5px;
+    }
+    
+    
+    .box_picture_boat .box_picture:hover p{
+        background-color: rgba(40,51, 60, 0.8);
+        color: #ecedee;
+    }
+    .box_picture_boat .box_picture p{
+        font-style: italic;
+        font-size: 1.3em; 
+    }
+    
+    .margin_services{
+        margin-bottom: 10vh;
+    } 
+
+/*--------------------------------------------
+---------------PageTeam------------------
+--------------------------------------------*/
+
+
+.cv_boxes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
+.team h2.title_gen{
+    margin-left: 2%;
+    margin-bottom: 8vh;
+}
+.cv_boxes .box_team
+{
+    margin: 0 auto;
+    margin-bottom: 10vh;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+}
+.team .box_team img {
+    border: 4px solid #2c333e;
+    border-radius: 50%;
+}
+.title_nom{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.7em;
+}
+.picture{
+    position: relative;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color:#2c333e;
+    border-radius: 50%;
+    display:block;
+}
+.picture:hover .overlay{
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
+
+.box_team .overlay .text{
+    color: white;
+    font-size: 1.1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text_team
+{
+    margin-bottom: 10vh;
+}
+.text_team h2
+{
+    margin-bottom: 10vh;
+}
+
+.text_team .p_default{
+    text-align: center;
+}
+
+
+
+/*--------------------------------------------
+---------------PageCV------------------
+--------------------------------------------*/
+
+/*---------------SectionProfil--------------*/
+
+.box_profil{
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 0 5vh 0;
+    background-color: #ecedee;
+    border-radius: 20px;
+    margin-bottom: 10vh;
+}
+
+.box_profil .box1_cv h2{
+    margin-bottom: 5vh;
+    padding-top: 5vh;
+}
+.box_profil .box1_cv .cita{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+.box_profil .box1_cv .cita q{
+    font-size: 1.1em;
+    font-style: italic;
+}
+.box_profil .box1_cv .cita .quote{
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 5vh;
+}
+
+
+.box_profil .box2_cv{
+    text-align: center;
+    padding-top: 5vh;
+}
+.box_profil .box2_cv img{
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2c333e;
+    margin-bottom: 5vh;
+}
+.box_profil .box2_cv .name_cv{
+    font-size: 1.7em;
+}
+.box_profil .box2_cv a{
+    color: #2c333e;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+.box_profil .box2_cv a i{
+    font-size: 2em;
+}
+
+
+/*---------------SectionSkills--------------*/
+
+.skills
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: auto;
+    padding: 5vh 0 20vh 0;
+    background: #ecedee;
+    border-radius: 20px;
+    text-align: center;
+}
+.skills li
+{
+    text-align: center;
+    padding-bottom: 5px;
+}
+.skills ul
+{
+    list-style: none;
+    padding-left: 0;
+
+}
+.skills .icons
+{
+    font-size: 4em;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+    color: #2c333e;
+}
+.skills .skills_xp,
+.skills .skills_comp
+{
+    width: 100%;
+}
+.skills.top_skills
+{
+    padding: 2vh 0 6vh 0;
+    margin-bottom: 10vh;
+}
+
+.skills.bot_skills
+{
+    padding: 2vh 0 6vh 0;
+    margin-bottom: 10vh;
+}
+
+/*---------------lien Précedant/Suivant--------------*/
+.link_switch{
+    margin-bottom: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.link_switch img{
+    transition: 1s ease;
+
+}
+.link_switch .img_arrow_left:hover{
+    transform: translate(-20px, 0);
+}
+.link_switch .img_arrow_right:hover{
+    transform: translate(20px, 0);
+}
+
+/*--------------------------------------------
+---------------PageContact------------------
+--------------------------------------------*/
+.form-group label
+{
+    padding-left: 10px;
+}
+.form-control:focus
+{
+    border: 2px solid #2c333e;
+    box-shadow: none;
+}
+
+.form-control::placeholder
+{
+    font-family: "barlow",serif;
+}
+form .btn
+{
+    display: block;
+    margin: 0 auto;
+    background-color: #2c333e;
+    border-color: #2c333e;
+    padding: 10px 20px;
+    color: #ecedee;
+}
+form .btn:hover
+{
+    color: #2c333e;
+    background-color: #ecedee;
+    border-color: #2c333e;
+
+}
+
+.text_area textarea{
+    min-height: 15vh;
+}
+.form-group 
+{
+    margin-bottom: 6vh;
+}
+.map-container-6{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container-6 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+ }
+ 
+.map-container-google-11 { 
+    position: relative; 
+     overflow: hidden; 
+    padding-top: 56.25%; 
+}
+
+.iframe_contact{
+     position: relative;
+     margin: auto;
+ }
+.contact_info a
+{
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #2c333e;
+
+}
+.contact_info i 
+{
+    color: #2c333e;
+    font-size: 2em;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+}
+/*--------------------------------------------
+---------------Responsive------------------
+--------------------------------------------*/
+
+
+
+@media screen and (min-width: 768px){
+    .container
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .skills .skills_xp,
+    .skills .skills_comp
+    {
+        width: 100%;
+    }
+    .p_default 
+    {
+        font-size: 1.3em;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    
+/*--------------------------------------------
+---------------HEADER------------------
+--------------------------------------------*/
+    .icon_burger{
+        display: none;
+    }
+    .containerNav
+    {
+        display: flex;
+        justify-content: space-around;
+        align-content: top;
+    }
+
+    .nav ul li{
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0 20px 0 0;
+    }
+    .nav ul li img{
+        margin-right: 10px;
+    }
+    .nav
+    {
+        position: unset;
+        pointer-events: unset;
+        opacity: 1;
+        transition: none;
+    }
+    .nav:hover
+    {
+        padding-top: 0px;
+    }
+/*--------------------------------------------
+---------------PageCV------------------
+--------------------------------------------*/
+    .box_profil
+    {
+        flex-direction: initial;
+    }
+    .box_profil .box1_cv{
+        width: 70%;
+    }
+    .box_profil .box2_cv{
+        width: 30%;
+        padding-right: 10px;
+    }
+    .skills .skills_xp,
+    .skills .skills_comp
+    {
+        width: 50%;
+    }
+    
+}
